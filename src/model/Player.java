@@ -27,4 +27,70 @@ public class Player {
 	@ManyToOne
 	@JoinColumn(name = "teamId")
 	private Team team;
+	
+	
+	
+	
+	
+	public Player(String firstName, String lastName, String phoneNumber, String screenName) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.phoneNumber = phoneNumber;
+		this.screenName = screenName;
+	}
+	public Player() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Player(int playerId, String firstName, String lastName, String phoneNumber, String screenName, Team team) {
+		super();
+		this.playerId = playerId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.phoneNumber = phoneNumber;
+		this.screenName = screenName;
+		this.team = team;
+	}
+	public int getPlayerId() {
+		return playerId;
+	}
+	public void setPlayerId(int playerId) {
+		this.playerId = playerId;
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+	public String getScreenName() {
+		return screenName;
+	}
+	public void setScreenName(String screenName) {
+		this.screenName = screenName;
+	}
+	public Team getTeam() {
+		return team;
+	}
+	public void setTeam(Team team) {
+		this.team = team;
+	}
+
+
+	
+	
+
 }

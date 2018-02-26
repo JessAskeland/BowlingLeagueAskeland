@@ -1,5 +1,6 @@
 package controller;
 
+
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -12,9 +13,12 @@ import model.Player;
 
 
 
+import model.Team;
+
 public class PlayerHelper {
 	EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("BowlingLeagueAskeland");
 	
+
 	
 	public void insertPlayer(Player toAdd) {
 		// TODO Auto-generated method stub
@@ -24,6 +28,7 @@ public class PlayerHelper {
 		em.getTransaction().commit();
 		em.close();
 	}
+
 
 	public List<Player> showAllPlayers() {
 		// TODO Auto-generated method stub
@@ -37,6 +42,7 @@ public class PlayerHelper {
 
 		return allPlayers;
 	}
+
 
 }
 

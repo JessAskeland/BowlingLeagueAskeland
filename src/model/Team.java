@@ -9,37 +9,30 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "team")
-
 public class Team {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="ID")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "teamId")
 	private int teamId;
-	@Column(name="teamName")
+	@Column(name = "teamName")
 	private String teamName;
-	@Column(name="teamType")
+	@Column(name = "teamType")
 	private String teamType;
-	@Column(name="preferredNight")
+	@Column(name = "preferredNight")
 	private String preferredNight;
-
-	public Team() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	public Team(int teamId, String teamName, String teamType, String preferredNight) {
-		super();
-		this.teamName = teamName;
-		this.teamType = teamType;
-		this.preferredNight = preferredNight;
-	}
-
 	
-	public Team(String teamName, String teamType, String preferredNight) {
-		super();
-		this.teamName = teamName;
-		this.teamType = teamType;
-		this.preferredNight = preferredNight;
+	public Team() {
+		
+	}
+	
+	public Team(String name) {
+		this.setTeamName(name);
+	}
+	
+	public Team(String name, String type, String night) {
+		this.teamName = name;
+		this.teamType = type;
+		this.preferredNight = night;
 	}
 
 	public int getTeamId() {
@@ -73,11 +66,4 @@ public class Team {
 	public void setPreferredNight(String preferredNight) {
 		this.preferredNight = preferredNight;
 	}
-
-	@Override
-	public String toString() {
-		return "Team [teamId=" + teamId + ", teamName=" + teamName + ", teamType=" + teamType + ", preferredNight="
-				+ preferredNight + "]";
-	}
-
 }

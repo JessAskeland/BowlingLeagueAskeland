@@ -29,6 +29,7 @@ public class Player {
 	private Team team;
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public Player() {
 		
 	}
@@ -86,6 +87,8 @@ public class Player {
 	}
 	
 =======
+=======
+>>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
 	
 	
 	
@@ -143,12 +146,16 @@ public class Player {
 	public Team getTeam() {
 		return team;
 	}
+<<<<<<< HEAD
+>>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
+=======
 >>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
 	public void setTeam(Team team) {
 		this.team = team;
 	}
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	public String toString() {
 		return "Player [playerId=" + playerId + ", firstName=" + firstName + ", lastName=" + lastName + ", phoneNumber="
@@ -160,6 +167,8 @@ public class Player {
 	
 }
 =======
+=======
+>>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
 	
 	
 

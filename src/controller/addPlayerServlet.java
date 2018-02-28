@@ -8,7 +8,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import model.Player;
+<<<<<<< HEAD
 import model.Team;
+=======
+
+>>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
 
 /**
  * Servlet implementation class addPlayerServlet
@@ -16,6 +20,7 @@ import model.Team;
 @WebServlet("/addPlayerServlet")
 public class addPlayerServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+<<<<<<< HEAD
 
 	/**
 	 * @see HttpServlet#HttpServlet()
@@ -31,11 +36,35 @@ public class addPlayerServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+=======
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public addPlayerServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+>>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
 		// TODO Auto-generated method stub
 		String firstName = request.getParameter("firstName");
 		String lastName = request.getParameter("lastName");
 		String phoneNumber = request.getParameter("phoneNumber");
 		String screenName = request.getParameter("screenName");
+<<<<<<< HEAD
 		String teamName = request.getParameter("teamName");
 		Team team;
 		TeamHelper th = new TeamHelper();
@@ -53,3 +82,16 @@ public class addPlayerServlet extends HttpServlet {
 	}
 
 }
+=======
+	
+		
+		
+		Player li = new Player(firstName, lastName, phoneNumber, screenName);
+		PlayerHelper dao = new PlayerHelper();
+		dao.insertPlayer(li);
+
+		getServletContext().getRequestDispatcher("/addTeam.html").forward(request, response);
+	}
+
+}
+>>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87

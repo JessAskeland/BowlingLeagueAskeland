@@ -1,6 +1,10 @@
 package controller;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
 =======
 
 >>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
@@ -11,12 +15,18 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
 
 
 import model.Player;
 
 
+<<<<<<< HEAD
+>>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
+=======
 >>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
 
 import model.Player;
@@ -31,6 +41,9 @@ public class PlayerHelper {
 	
 
 	
+<<<<<<< HEAD
+>>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
+=======
 >>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
 	public void insertPlayer(Player toAdd) {
 		// TODO Auto-generated method stub
@@ -41,6 +54,7 @@ public class PlayerHelper {
 		em.close();
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	public void deleteAllPlayersOnTeam(Team team) {
 		// TODO Auto-generated method stub
@@ -58,10 +72,13 @@ public class PlayerHelper {
 	}
 =======
 >>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
+=======
+>>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
 
 	public List<Player> showAllPlayers() {
 		// TODO Auto-generated method stub
 		EntityManager em = emfactory.createEntityManager();
+<<<<<<< HEAD
 <<<<<<< HEAD
 		TypedQuery<Player> allResults = em.createQuery("select p from Player p", Player.class);
 		List<Player> allPlayers = allResults.getResultList();
@@ -92,6 +109,8 @@ public class PlayerHelper {
 
 }
 =======
+=======
+>>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
 		// creates the query but does not execute it.
 		TypedQuery<Player> allResults = em.createQuery("Select list_item from Player list_item", Player.class);
 		// Selects the info
@@ -106,4 +125,7 @@ public class PlayerHelper {
 }
 
 
+<<<<<<< HEAD
+>>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
+=======
 >>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87

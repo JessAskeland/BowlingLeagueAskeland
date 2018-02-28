@@ -12,7 +12,7 @@ import model.Team;
 
 public class TeamHelper {
 	
-	EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("BowlingLeagueHanneman");
+	EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("BowlingLeagueAskeland");
 	
 	public void insertTeam(Team t) {
 		EntityManager em = emfactory.createEntityManager();

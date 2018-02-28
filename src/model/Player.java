@@ -28,8 +28,6 @@ public class Player {
 	@JoinColumn(name = "teamId")
 	private Team team;
 	
-<<<<<<< HEAD
-<<<<<<< HEAD
 	public Player() {
 		
 	}
@@ -86,77 +84,11 @@ public class Player {
 		return team;
 	}
 	
-=======
-=======
->>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
-	
-	
-	
-	
-	public Player(String firstName, String lastName, String phoneNumber, String screenName) {
-		super();
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.phoneNumber = phoneNumber;
-		this.screenName = screenName;
-	}
-	public Player() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public Player(int playerId, String firstName, String lastName, String phoneNumber, String screenName, Team team) {
-		super();
-		this.playerId = playerId;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.phoneNumber = phoneNumber;
-		this.screenName = screenName;
-		this.team = team;
-	}
-	public int getPlayerId() {
-		return playerId;
-	}
-	public void setPlayerId(int playerId) {
-		this.playerId = playerId;
-	}
-	public String getFirstName() {
-		return firstName;
-	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-	public String getLastName() {
-		return lastName;
-	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-	public String getPhoneNumber() {
-		return phoneNumber;
-	}
-	public void setPhoneNumber(String phoneNumber) {
-		this.phoneNumber = phoneNumber;
-	}
-	public String getScreenName() {
-		return screenName;
-	}
-	public void setScreenName(String screenName) {
-		this.screenName = screenName;
-	}
-	public Team getTeam() {
-		return team;
-	}
-<<<<<<< HEAD
->>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
-=======
->>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
 	public void setTeam(Team team) {
 		this.team = team;
 	}
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 	public String toString() {
 		return "Player [playerId=" + playerId + ", firstName=" + firstName + ", lastName=" + lastName + ", phoneNumber="
 				+ phoneNumber + ", screenName=" + screenName + "]";
@@ -166,11 +98,3 @@ public class Player {
 	
 	
 }
-=======
-=======
->>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87
-	
-	
-
-}
->>>>>>> e608e2b0b2f151cb950cb6baa5101e6f9139ea87

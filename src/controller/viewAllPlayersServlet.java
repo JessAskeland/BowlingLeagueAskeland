@@ -10,14 +10,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class viewPlayersOnTeamServlet
  */
-@WebServlet("/viewPlayersServlet")
-public class viewPlayersServlet extends HttpServlet {
+@WebServlet("/viewAllPlayersServlet")
+public class viewAllPlayersServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public viewPlayersServlet() {
+    public viewAllPlayersServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -32,7 +32,7 @@ public class viewPlayersServlet extends HttpServlet {
 		if(ph.showAllPlayers().isEmpty()) {
 			getServletContext().getRequestDispatcher("/addPlayer.html").forward(request, response);
 		}
-		getServletContext().getRequestDispatcher("/viewPlayers.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/viewAllPlayers.jsp").forward(request, response);
 	}
 
 	/**
